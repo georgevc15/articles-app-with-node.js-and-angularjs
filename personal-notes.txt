@@ -1,5 +1,8 @@
-
-
+------------------------------ Angular ------------------------------
+1) npm install -g @angular/cli
+2) ng new app-name
+3) cd app-name
+4) ng serve
 
 
 
@@ -13,6 +16,7 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/georgevc15/articles-app-with-node.js-and-angularjs.git
 git push -u origin master
+
 …or push an existing repository from the command line
 git remote add origin https://github.com/georgevc15/articles-app-with-node.js-and-angularjs.git
 git push -u origin master
