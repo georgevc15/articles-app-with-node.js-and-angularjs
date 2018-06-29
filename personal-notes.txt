@@ -3,13 +3,13 @@
 2) ng new app-name
 3) cd app-name
 4) ng serve
-
+5) run project http://localhost:4200/
 
 
 
 ------------------------------ Git ------------------------------
 
-…or create a new repository on the command line
+ï¿½or create a new repository on the command line
 echo "# articles-app-with-node.js-and-angularjs" >> README.md
 git init
 git add README.md
@@ -17,6 +17,6 @@ git commit -m "first commit"
 git remote add origin https://github.com/georgevc15/articles-app-with-node.js-and-angularjs.git
 git push -u origin master
 
-…or push an existing repository from the command line
+ï¿½or push an existing repository from the command line
 git remote add origin https://github.com/georgevc15/articles-app-with-node.js-and-angularjs.git
 git push -u origin master
