@@ -3,9 +3,10 @@
 2) ng new app-name
 3) cd app-name
 4) ng serve
-5) run project http://localhost:4200/
+5) run project
 
-
+------------------------------ Angular material ------------------------------
+1) npm install --save @angular/material @angular/cdk sau daca am ultima versiune de ng client: ng add @angular/material
 
 ------------------------------ Git ------------------------------
 
