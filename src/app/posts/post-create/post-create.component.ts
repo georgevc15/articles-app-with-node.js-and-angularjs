@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class PostCreateComponent {
-    newPost = 'asd';
+    newPost = '';
     enteredValue = '';
 
     onAddPost() {
