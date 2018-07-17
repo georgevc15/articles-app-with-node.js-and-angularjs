@@ -16,6 +16,9 @@ export class PostCreateComponent {
 
     onAddPost(form: NgForm) {
       // console.dir(postInput);
+      if (form.invalid) {
+        return;
+      }
       const post: Post = {
         title: form.value.title,
         content: form.value.content
