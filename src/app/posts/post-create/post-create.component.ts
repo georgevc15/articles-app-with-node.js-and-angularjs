@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-import { Post } from '../post.model';
 import { NgForm } from '@angular/forms';
 
 import { PostsService } from './../posts.service';
@@ -23,5 +22,6 @@ export class PostCreateComponent {
         return;
       }
       this.postService.addPost(form.value.title, form.value.content);
+      form.resetForm();
     }
 }
