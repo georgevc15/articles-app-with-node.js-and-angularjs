@@ -5,6 +5,9 @@
 4) ng serve
 5) run project
 
+------------------------------ node ------------------------------
+node server.js
+
 ------------------------------ Angular material ------------------------------
 1) npm install --save @angular/material @angular/cdk sau daca am ultima versiune de ng client: ng add @angular/material
 
@@ -21,3 +24,11 @@ git push -u origin master
 �or push an existing repository from the command line
 git remote add origin https://github.com/georgevc15/articles-app-with-node.js-and-angularjs.git
 git push -u origin master
+
+
+------------------------------ Learning Sources ------------------------------
+Learn everything about Angular: https://academind.com/learn/angular
+Angular Material Tutorial: https://academind.com/learn/angular/angular-material-a-thorough-guide/
+Angular Material Docs: https://material.angular.io/
+Reference vs Primitive Types in JS: https://academind.com/learn/javascript/reference-vs-primitive-values/
+RxJS Tutorial: https://academind.com/learn/javascript/understanding-rxjs/
