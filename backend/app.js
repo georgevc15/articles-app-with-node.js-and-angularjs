@@ -1,5 +1,8 @@
 const express = require('express')
-const app = express()
+const app = express();
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -12,6 +15,10 @@ app.use((req, res, next) => {
     "GET, POST, PATCH, DELETE, OPTIONS"
   );
   next();
+});
+
+app.post("/api/posts", (req, res, next) => {
+  console.log();
 });
 
 app.use('/api/posts', (req, res, next) => {
