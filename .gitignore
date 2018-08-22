@@ -34,6 +34,7 @@ yarn-error.log
 testem.log
 /typings
 personal-notes.txt
+/backend/constants.js
 
 # System Files
 .DS_Store
