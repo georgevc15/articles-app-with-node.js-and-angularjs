@@ -80,9 +80,17 @@ onImagePicked(event: Event) {
       }
       this.isLoading = true;
       if (this.mode === 'create') {
-        this.postService.addPost(this.form.value.title, this.form.value.content);
+        this.postService.addPost(
+          this.form.value.title,
+          this.form.value.content,
+          this.form.value.image
+          );
       } else {
-        this.postService.updatePost(this.postId, this.form.value.title, this.form.value.content);
+        this.postService.updatePost(
+          this.postId,
+          this.form.value.title,
+          this.form.value.content
+          );
       }
       this.form.reset();
     }
