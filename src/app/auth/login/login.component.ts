@@ -14,6 +14,7 @@ export class LoginComponent {
 constructor(public authService: AuthService) {}
 
   onLogin(form: NgForm) {
+    // console.log('here');
     if (!form.invalid) {
       return;
     }
