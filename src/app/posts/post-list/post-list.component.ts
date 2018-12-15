@@ -13,9 +13,9 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class PostListComponent implements OnInit, OnDestroy {
   // posts = [
-  //   { title: 'First Post', content: 'This is the first post's content' },
-  //   { title: 'Second Post', content: 'This is the second post's content' },
-  //   { title: 'Third Post', content: 'This is the third post's content' }
+  //   { title: "First Post", content: "This is the first post's content" },
+  //   { title: "Second Post", content: "This is the second post's content" },
+  //   { title: "Third Post", content: "This is the third post's content" }
   // ];
   posts: Post[] = [];
   isLoading = false;
@@ -27,24 +27,27 @@ export class PostListComponent implements OnInit, OnDestroy {
   private postsSub: Subscription;
   private authStatusSub: Subscription;
 
-  constructor(public postsService: PostsService, private authService: AuthService) {}
+  constructor(
+    public postsService: PostsService,
+    private authService: AuthService
+  ) {}
 
   ngOnInit() {
     this.isLoading = true;
     this.postsService.getPosts(this.postsPerPage, this.currentPage);
     this.postsSub = this.postsService
       .getPostUpdateListener()
-      .subscribe((postData: {posts: Post[], postCount: number}) => {
+      .subscribe((postData: { posts: Post[]; postCount: number }) => {
         this.isLoading = false;
         this.totalPosts = postData.postCount;
         this.posts = postData.posts;
       });
-      this.userIsAuthenticated = this.authService.getIsAuth();
-      this.authStatusSub = this.authService
-        .getAuthStatusListener()
-        .subscribe(isAuthenticated => {
-          this.userIsAuthenticated = isAuthenticated;
-        });
+    this.userIsAuthenticated = this.authService.getIsAuth();
+    this.authStatusSub = this.authService
+      .getAuthStatusListener()
+      .subscribe(isAuthenticated => {
+        this.userIsAuthenticated = isAuthenticated;
+      });
   }
 
   onChangedPage(pageData: PageEvent) {
