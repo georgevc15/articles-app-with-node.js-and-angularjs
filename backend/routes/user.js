@@ -9,7 +9,6 @@ let jwtHash  = constants.appPasswords.JWT_HASH
 const router = express.Router();
 
 router.post("/signup", (req, res, next) => {
- console.log('sunt aici!');
   bcrypt.hash(req.body.password, 10).then(hash => {
     const user = new User({
       email: req.body.email,

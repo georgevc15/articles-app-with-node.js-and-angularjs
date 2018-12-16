@@ -109,6 +109,6 @@ export class AuthService {
     return {
       token: token,
       expirationDate: new Date(expirationDate)
-    }
+    };
   }
 }
