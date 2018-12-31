@@ -11,7 +11,11 @@ const constants = require('./constants');
 const app = express();
 
 let mongoDBPass = constants.appPasswords.MONGO_DB_PASSWOPRD;
-mongoose.connect('mongodb+srv://georgevc15:'+mongoDBPass+'@cluster0-96lzh.mongodb.net/articles-app?retryWrites=true')
+mongoose.connect(
+  'mongodb+srv://georgevc15:' +
+    process.env.MONGO_ATLAS_PW +
+    '@cluster0-96lzh.mongodb.net/articles-app?retryWrites=true'
+    )
       .then(()=> {
         console.log('Conected to database');
       })
