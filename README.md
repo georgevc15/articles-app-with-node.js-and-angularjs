@@ -26,11 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
 ## App link
-http://articles-app-nodejs-angular.s3-website.us-east-2.amazonaws.com/
-
-- Instruction on deploying the app using two servers cand be found within the deptwoser branch
+http://articlesappmean-env.2dqi2g9kgi.us-east-2.elasticbeanstalk.com/
 
 ## Deployment
 - use branch deponeser and follow the instructions from readme file to deploy the app on AWS using one server
